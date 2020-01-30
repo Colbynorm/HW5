@@ -15,24 +15,24 @@
 </head>
 <body>
     <header class="jumbotron">
-        <h1>Daily Planner</h1>
-        <h3>A Schedule To Plan Your Day!</h3>
-        <div function clock() {
-            var now = moment().format("dddd, MMMM Do YYYY, hh:mm:ss A");
-            $currentDay.html(now);
-            setTimeout(clock, 1000);
-        }</div> 
+        <h1 class="display-3">Daily Planner</h1>
+        <p class="lead">A Schedule To Plan Your Day!</p>
+        <p id="currentDay" class="lead"></p> 
     </header>
         <div class="schedule">
             <div class="row">
-                <div class="col-lg-12">
+                <!-- <div class="col-lg-12"> -->
                     <p>8am</p>
-                </div>
+                    <textarea id="8"></textarea>
+                    <button class="saveButton" id="8">SAVE</button>
+                <!-- </div> -->
             </div>
             <div class="row">
-                <div class="col-lg-12">
+                <!-- <div class="col-lg-12"> -->
                     <p>9am</p>
-                </div>
+                    <textarea></textarea>
+                    <button class="saveButton" id="9">SAVE</button>
+                <!-- </div> -->
             </div>
             <div class="row">
                 <div class="col-lg-12">
