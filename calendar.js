@@ -23,10 +23,10 @@ $("textarea").each(function(){
     $(this).addClass("future");
     
     else(calendarHour < currentHour)
-    $(this).addClass("Past");
+    $(this).addClass("past");
 
     ifelse(calendarHour === currentHour)
-    $(this).addClass("Future");
+    $(this).addClass("present");
 
     //also where you set the value of the boxes to whatever is in the localstorage
 })
