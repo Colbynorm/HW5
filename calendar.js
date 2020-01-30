@@ -19,9 +19,14 @@ $(".saveButton").on("click", function(event){
 })
 
 $("textarea").each(function(){
-    // if(calendarHour > currentHour)
-    //parseInt the calendar time which you get from this.attr
+    if(calendarHour > currentHour)
     $(this).addClass("future");
+    
+    else(calendarHour < currentHour)
+    $(this).addClass("Past");
+
+    ifelse(calendarHour === currentHour)
+    $(this).addClass("Future");
 
     //also where you set the value of the boxes to whatever is in the localstorage
 })
