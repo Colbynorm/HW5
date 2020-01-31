@@ -18,8 +18,8 @@ $(".saveButton").on("click", function(event){
     localStorage.setItem(time, task);
 })
 
-;
-
+var calendarHour = $("#time");
+var currentHour = moment().hours();
 $("textarea").each(function(){
     if(calendarHour > currentHour){
     $(this).addClass("future");
@@ -30,7 +30,6 @@ $("textarea").each(function(){
     else if(calendarHour === currentHour){
     $(this).addClass("present");
     }
-    //also where you set the value of the boxes to whatever is in the localstorage
 })
 
 //.text() .val() .show()/.hide() .append() .empty() .siblings() .attr() .css() .html()
