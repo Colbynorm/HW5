@@ -10,8 +10,9 @@ console.log(hour)
 
 clock();
 
+var saveButton = $(".saveButton");
 
-$(".saveButton").on("click", function(event){
+saveButton.on("click", function(event){
     event.target
     var task = $(this).siblings("textarea").val();
     var time = $(this).attr("id");
